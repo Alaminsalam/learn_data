@@ -1,0 +1,5 @@
+# Contoh file .gitignore
+
+env/ 
+*.pyc 
+__pycache__/  

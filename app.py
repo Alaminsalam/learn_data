@@ -12,8 +12,6 @@ from sklearn.metrics import confusion_matrix
 from textblob import TextBlob
 from sklearn.cluster import KMeans
 from sklearn.neighbors import KNeighborsClassifier
-from googletrans import Translator
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
@@ -22,12 +20,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 # from nltk.probability import FreqDist
 from nltk.corpus import stopwords
-
-# pengguunaan componen pada streamlit
-# import pandas_profiling
-# from st_aggrid import AgGrid
 from google_play_scraper import Sort, reviews
-# from streamlit_pandas_profiling import st_profile_report
 
 df = None
 def view_scraper():

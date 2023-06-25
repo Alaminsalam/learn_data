@@ -1,6 +1,7 @@
 import streamlit as st
 from app import view_scraper
 from view import view_home
+from data import process
 
     
 def main():
@@ -9,6 +10,7 @@ def main():
     pages = {
     "Home": view_home,
     "Scraper": view_scraper,
+    "Insert Data" : process
     }
     page = st.sidebar.radio("Fitur", pages.keys())
     pages[page]()
